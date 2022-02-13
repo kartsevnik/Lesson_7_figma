@@ -1,5 +1,7 @@
-@import "null.css";
-@import "fonts.css";
+@import "../css/null.css";
+@import "../css/fonts.css";
+
+/* Тело страницы */
 
 body {
     font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -7,12 +9,12 @@ body {
     width: 1233px;
 }
 
-/* main > * {
-    outline: 1px solid #000;
-} */
 .wrapper {
     padding: 132px 82px 106px 341px;
 }
+
+/* header */
+
 .title {
     font-style: normal;
     font-weight: 900;
@@ -27,9 +29,12 @@ body {
     display: inline-block;
 }
 
+/* общие классы */
+
 p {
     padding: 0 0 24px 0;
 }
+
 
 .text {
     font-size: 16px;
@@ -48,6 +53,16 @@ p {
     padding: 0 0 24px 0;
 }
 
+.text__bold {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: inline-block;
+}
+
 /* Блок с кавычками */
 
 .quotes {
@@ -63,15 +78,6 @@ p {
     max-width: 90%;
 }
 
-.text__bold {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    display: inline-block;
-}
 
 /* Пункты */
 
@@ -88,4 +94,47 @@ p {
     margin: 0 0 10px 0;
     padding: 0 0 0px 25px;
     background: url(../img/check.png) 0 0 no-repeat;
+}
+.item-list.list_2 {
+    width: 390px;
+}
+
+/* Доп задание с кнопкой */
+
+h2 {
+    text-transform: uppercase;
+    color: #1e212c;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+h2.h2 {
+    margin-bottom: 8px;
+}
+
+h1.h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+    margin-bottom: 40px;
+}
+
+.btn__orange {
+    width: 161px;
+    height: 44px;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+
+.btn_text {
+    margin: 0 auto;
+    width: 97px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    line-height: 44px;
 }
